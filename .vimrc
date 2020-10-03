@@ -1,13 +1,6 @@
-" ------------ 文字コードなど
-" Vim内部で使う文字コード
 set encoding=utf-8
-
-" このファイルの文字コード
 scriptencoding utf-8
-
-" ファイルを開くときの文字コードの候補
 set fileencodings=utf-8,cp932,sjis,utf-16le
-
 set fileformats=unix,dos
 
 execute pathogen#infect()
@@ -47,4 +40,5 @@ augroup vimrc
     autocmd FileType vim setlocal keywordprg=:help
 augroup END
 
-
+nnoremap <Leader>ev :e ~/dotfiles/.vimrc<CR> 
+nnoremap <Leader>cv :e ~/dotfiles/cheetsheets/vim.txt<CR> 
