@@ -40,6 +40,8 @@ augroup vimrc
     autocmd FileType vim setlocal keywordprg=:help
 augroup END
 
+let mapleader=","
+nnoremap \ ,
 nnoremap <Leader>ev :e ~/dotfiles/.vimrc<CR> 
 nnoremap <Leader>cv :e ~/dotfiles/cheetsheets/vim.txt<CR> 
 nnoremap q: <Nop>
